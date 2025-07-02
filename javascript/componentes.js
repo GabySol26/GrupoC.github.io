@@ -7,7 +7,7 @@ function includeHTML(selector, file) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  const isIndex = location.pathname.endsWith("index.html") || location.pathname === "/" || location.pathname === "/index.html";
+  const isIndex = path === "/" || path.endsWith("/index.html") || path === "/GrupoC.github.io/" || path.endsWith("/GrupoC.github.io/index.html");
 
   const headerPath = isIndex ? "paginas/header.html" : "header.html";
   const footerPath = isIndex ? "paginas/footer.html" : "footer.html";
