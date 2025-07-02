@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.quienes-somos {
+  padding: 40px 20px;
+  background-color: #d0dee6;
+  min-height: 100vh;
+}
+
+.quienes-somos h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.equipo {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.miembro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: nowrap;
+}
+
+.miembro.izquierda {
+  flex-direction: row;
+}
+
+.miembro.derecha {
+  flex-direction: row-reverse;
+}
+
+.foto-equipo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ffffff;
+}
+
+.info {
+  flex: 1;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #0e2b3c;
+}
+
+.info h3 {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.boton-historia-contenedor {
+  text-align: center;
+  margin: 50px 0 30px;
+}
+
+.boton-historia {
+  display: inline-block;
+  background-color: #00796b;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.boton-historia:hover {
+  background-color: #004d40;
+}
+
+@media (max-width: 768px) {
+  .miembro {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .foto-equipo {
+    margin: 0 auto 10px auto;
+  }
+
+  .info {
+    max-width: 100%;
+  }
+}

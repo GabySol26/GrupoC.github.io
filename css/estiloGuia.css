@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.guia-detalle {
+  background-color: #d0dee6;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 40px 20px;
+}
+
+.bloque-intro {
+  display: flex;
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.intro-texto {
+  flex: 1;
+  min-width: 280px;
+}
+
+.intro-texto h2 {
+  font-size: 22px;
+  color: #1a237e;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.intro-texto p {
+  font-size: 14px;
+  color: #222;
+  margin-bottom: 14px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.intro-imagen img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 6px;
+}
+
+.bloque-video {
+  display: flex;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 50px auto 0;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.video-embebido iframe {
+  border-radius: 6px;
+}
+
+.video-texto {
+  flex: 1;
+  min-width: 280px;
+}
+
+.video-texto p {
+  font-size: 14px;
+  color: #222;
+  margin-bottom: 14px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.calificacion {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.calificacion p {
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.estrellas {
+  font-size: 24px;
+  color: #000;
+  margin-bottom: 12px;
+}
+
+.redes a img {
+  width: 28px;
+  margin: 0 6px;
+  vertical-align: middle;
+}
+
+@media (max-width: 1024px) {
+  .bloque-intro,
+  .bloque-video {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .intro-texto,
+  .video-texto {
+    text-align: center;
+  }
+
+  .intro-texto p,
+  .video-texto p {
+    text-align: justify;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro-imagen img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .video-embebido iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+  }
+
+  .intro-texto h2 {
+    font-size: 20px;
+  }
+
+  .calificacion p {
+    font-size: 14px;
+  }
+
+  .estrellas {
+    font-size: 20px;
+  }
+}

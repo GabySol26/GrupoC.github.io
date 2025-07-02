@@ -1,0 +1,69 @@
+body {
+  background-color: #d0dee6;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.contacto-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contacto-container h2 {
+  text-align: center;
+  color: #1a237e;
+  margin-bottom: 30px;
+  text-decoration: underline;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formulario label {
+  font-weight: bold;
+  color: #333;
+}
+
+.formulario input,
+.formulario textarea {
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.formulario button {
+  background-color: #004d66;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario button:hover {
+  background-color: #007799;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .contacto-container {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  .formulario button {
+    font-size: 14px;
+  }
+}

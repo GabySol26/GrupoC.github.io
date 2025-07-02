@@ -1,0 +1,166 @@
+body {
+  background-color: #cbd8e2;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 1.5rem;
+  text-decoration: underline;
+}
+
+.suscripcion-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.suscripcion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.fila-invertida {
+  flex-direction: row-reverse;
+}
+
+.imagen-redonda {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.texto {
+  flex: 1;
+  min-width: 250px;
+  max-width: 400px;
+  padding: 0 1rem;
+  color: #000;
+}
+
+.oferta {
+  text-align: left;
+  min-width: 180px;
+}
+
+.oferta a {
+  font-weight: bold;
+  color: #003366;
+  text-decoration: underline;
+}
+
+.oferta p {
+  margin: 0.5rem 0;
+}
+
+.oferta del {
+  color: gray;
+}
+
+.boton-icono,
+.boton-simple {
+  display: block;
+  margin-top: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #333;
+  border-radius: 6px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.boton-icono {
+  font-size: 1rem;
+}
+
+.boton-icono:hover,
+.boton-simple:hover {
+  background-color: #84add7;
+  border-color: #0077cc;
+  color: #0077cc;
+  transition: all 0.3s ease;
+}
+
+.descuentos-container {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.boton-descuentos {
+  display: inline-block;
+  background-color: transparent;
+  border: 2px solid #0c3b66;
+  color: #0c3b66;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.boton-descuentos:hover {
+  background-color: #d8ea96;
+  border-color: #0077cc;
+  color: #0077cc;
+}
+
+@media (max-width: 768px) {
+  .suscripcion {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .fila-invertida {
+    flex-direction: column;
+  }
+
+  .imagen-redonda {
+    width: 160px;
+    height: 160px;
+  }
+
+  .texto,
+  .oferta {
+    max-width: 100%;
+    padding: 0.5rem;
+  }
+
+  .oferta {
+    text-align: center;
+  }
+
+  .boton-icono,
+  .boton-simple,
+  .boton-descuentos {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo {
+    font-size: 1.4rem;
+  }
+
+  .imagen-redonda {
+    width: 130px;
+    height: 130px;
+  }
+
+  .boton-descuentos {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}

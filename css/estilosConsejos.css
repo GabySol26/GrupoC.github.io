@@ -1,0 +1,112 @@
+body {
+   background-color: #d0dee6;
+   font-family: 'Segoe UI', sans-serif;
+   margin: 0;
+   padding: 0;
+}
+ .consejos-container {
+   padding: 40px 20px;
+   max-width: 1200px;
+   margin: auto;
+}
+h2 {
+   text-align: center;
+   color: #1a237e;
+   font-size: 18px;
+   text-decoration: underline;
+   margin-bottom: 20px;
+}
+.video-wrapper {
+   display: flex;
+   justify-content: center;
+   margin-bottom: 30px;
+}
+iframe {
+  width: 100%;
+  max-width: 680px;
+  height: 380px;
+  border: none;
+}
+.texto-columnas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.texto-columnas p {
+  flex: 1 1 300px;
+  max-width: 400px;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.calificacion {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.calificacion p {
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.estrellas {
+  font-size: 24px;
+  color: #000;
+  margin-bottom: 12px;
+}
+
+.redes a img {
+  width: 28px;
+  margin: 0 6px;
+  vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .video-wrapper iframe {
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  .texto-columnas {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .texto-columnas p {
+    font-size: 13px;
+    padding: 0 10px;
+    text-align: justify;
+  }
+
+  .estrellas {
+    font-size: 20px;
+  }
+
+  .redes a img {
+    width: 24px;
+    margin: 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 14px;
+  }
+
+  .calificacion p {
+    font-size: 13px;
+  }
+
+  .texto-columnas p {
+    font-size: 12.5px;
+  }
+}
